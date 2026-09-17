@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Calculadora | Operaciones con Arreglos</title>
+        <link rel="stylesheet" href="css/ejercicio9.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head> 
+    
+    <body>
+        <div class="contenedor-formulario">
+            <h1>Ordenacion de Numeros</h1>
+            <p class="subtitulo">Mayor, Menor y Promedio de una serie numerica</p>
+
+            <form class="formulario" id="formulario">
+                <div class="grupo-formulario">
+                    <label for="entradaNumeros">Ingrese numeros separados por comas:</label>
+                    <input type="text" id="entradaNumeros" placeholder="Ej. 10, 20, 30, 40, 50">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="mayor">Numero Mayor</label>
+                    <input type="text" id="numMayor" placeholder="Resultado" readonly>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="menor">Numero Menor</label>
+                    <input type="text" id="numMenor" placeholder="Resultado" readonly>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="promedio">Promedio</label>
+                    <input type="text" id="numPromedio" placeholder="Resultado" readonly>
+                </div>
+
+                <button type="submit" class="boton-enviar">
+                    Calcular <span> → </span>
+                </button>
+            </form>
+        </div>
+
+        <div class="contenedor-formulario" style="margin-top: 20px;">
+             <a href="index.html" class="boton-enviar" style="text-decoration: none;">
+                Indice general <span> → </span>
+             </a>
+        </div>
+
+        <script src="js/ejercicio14.js"></script>
+    </body> 
+</html>

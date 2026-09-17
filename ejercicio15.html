@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Calificaciones | Estudiantes </title>
+        <link rel="stylesheet" href="css/ejercicio9.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </head> 
+    
+    <body>
+        <div class="contenedor-formulario">
+            <h1>Calificaciones</h1>
+            <p class="subtitulo">Obtener el rendimiento estudiantil</p>
+
+            <form class="formulario" id="formulario">
+                <div class="grupo-formulario">
+                    <label for="nombreEstudiante">Ingrese el nombre del estudiante:</label>
+                    <input type="text" id="nombreEstudiante" placeholder="Ej. Ana Perez">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="entradaCalificacion">Ingrese la calificacion:</label>
+                    <input type="text" id="entradaCalificacion" placeholder="Ej. 95">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="promedio">Promedio Estudiantil:</label>
+                    <input type="text" id="promedio" placeholder="Resultado" readonly>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="menor">Menor Calificacion:</label>
+                    <input type="text" id="numMenor" placeholder="Resultado" readonly>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="mayor">Mayor Calificacion</label>
+                    <input type="text" id="numMayor" placeholder="Resultado" readonly>
+                </div>
+
+                <div class="grupo-formulario">
+                    <button type="submit" class="boton-enviar">
+                        Añadir Estudiante <span> → </span>
+                    </button>
+                </div>
+
+                <div class="grupo-formulario">
+                    <button type="calcular" class="boton-enviar">
+                        Calcular <span> → </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor-formulario" style="margin-top: 20px;">
+             <a href="index.html" class="boton-enviar" style="text-decoration: none;">
+                Indice general <span> → </span>
+             </a>
+        </div>
+
+        <script src="js/ejercicio14.js"></script>
+    </body> 
+</html>

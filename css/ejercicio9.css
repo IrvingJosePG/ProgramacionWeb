@@ -17,7 +17,7 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
     line-height: 1.6;
-    padding: 40 px 20px;
+    padding: 40px 20px;
 }
 
 .contenedor-formulario {
@@ -27,6 +27,17 @@ body {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contenedor-index {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-decoration: none;
 }
 
 h1 {
@@ -86,5 +97,5 @@ input:focus, textarea:focus {
 }
 
 .boton-enviar:hover {
-    background-attachment: #2a0880;
+    background-color: #2a0880;
 }
