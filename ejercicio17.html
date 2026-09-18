@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Gestión de Tareas</title>
+        <link rel="stylesheet" href="css/ejercicio9.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head> 
+    
+    <body>
+        <div class="contenedor-formulario">
+            <h1>Gestión de Tareas</h1>
+            <p class="subtitulo">Guardado con JSON y Local Storage</p>
+
+            <form class="formulario" id="formulario" onsubmit="event.preventDefault();">
+                <div class="grupo-formulario">
+                    <label for="inputTarea">Nueva Tarea</label>
+                    <input type="text" id="inputTarea" placeholder="Ej. Estudiar JavaScript">
+                </div>
+
+                <button type="button" class="boton-enviar" id="botonAgregarTarea" style="margin-bottom: 30px;">
+                    Agregar Tarea <span> + </span>
+                </button>
+            </form>
+
+            <div id="listaTareas">
+            </div>
+        </div>
+
+        <div class="contenedor-formulario" style="margin-top: 20px;">
+             <a href="index.html" class="boton-enviar" style="text-decoration: none;">
+                Índice general <span> → </span>
+             </a>
+        </div>
+
+        <script src="js/ejercicio17.js"></script>
+    </body> 
+</html>

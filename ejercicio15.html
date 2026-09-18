@@ -3,62 +3,58 @@
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Calificaciones | Estudiantes </title>
+        <title>Calificaciones | Estudiantes</title>
         <link rel="stylesheet" href="css/ejercicio9.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     </head> 
     
     <body>
         <div class="contenedor-formulario">
-            <h1>Calificaciones</h1>
-            <p class="subtitulo">Obtener el rendimiento estudiantil</p>
+            <h1>Calificaciones de Estudiantes</h1>
+            <p class="subtitulo">Registro y evaluacion de estudiantes</p>
 
             <form class="formulario" id="formulario">
                 <div class="grupo-formulario">
-                    <label for="nombreEstudiante">Ingrese el nombre del estudiante:</label>
-                    <input type="text" id="nombreEstudiante" placeholder="Ej. Ana Perez">
+                    <label for="nombre">Nombre del estudiante:</label>
+                    <input type="text" id="nombre" placeholder="Ej. Juan">
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="entradaCalificacion">Ingrese la calificacion:</label>
-                    <input type="text" id="entradaCalificacion" placeholder="Ej. 95">
+                    <label for="calificacion">Calificacion:</label>
+                    <input type="number" id="calificacion" placeholder="Ej. 85">
                 </div>
 
+                <button type="button" class="boton-enviar" id="botonAgregar" style="margin-bottom: 30px;">
+                    Agregar estudiante <span> + </span>
+                </button>
+
                 <div class="grupo-formulario">
-                    <label for="promedio">Promedio Estudiantil:</label>
+                    <label for="promedio">Calificacion promedio</label>
                     <input type="text" id="promedio" placeholder="Resultado" readonly>
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="menor">Menor Calificacion:</label>
-                    <input type="text" id="numMenor" placeholder="Resultado" readonly>
+                    <label for="mejorEstudiante">Estudiante con la calificación mas alta</label>
+                    <input type="text" id="mejorEstudiante" placeholder="Resultado" readonly>
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="mayor">Mayor Calificacion</label>
-                    <input type="text" id="numMayor" placeholder="Resultado" readonly>
+                    <label for="peorEstudiante">Estudiante con la calificación mas baja</label>
+                    <input type="text" id="peorEstudiante" placeholder="Resultado" readonly>
                 </div>
 
-                <div class="grupo-formulario">
-                    <button type="submit" class="boton-enviar">
-                        Añadir Estudiante <span> → </span>
-                    </button>
-                </div>
-
-                <div class="grupo-formulario">
-                    <button type="calcular" class="boton-enviar">
-                        Calcular <span> → </span>
-                    </button>
-                </div>
+                <button type="button" class="boton-enviar" id="botonCalcular">
+                    Calcular <span> → </span>
+                </button>
             </form>
         </div>
 
         <div class="contenedor-formulario" style="margin-top: 20px;">
              <a href="index.html" class="boton-enviar" style="text-decoration: none;">
-                Indice general <span> → </span>
+                Índice general <span> → </span>
              </a>
         </div>
 
-        <script src="js/ejercicio14.js"></script>
+        <script src="js/ejercicio15.js"></script>
     </body> 
 </html>

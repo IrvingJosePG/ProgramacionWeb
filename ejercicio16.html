@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Calculadora Basica</title>
+        <link rel="stylesheet" href="css/ejercicio9.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head> 
+    
+    <body>
+        <div class="contenedor-formulario">
+            <h1>Calculadora Basica</h1>
+            <p class="subtitulo">Calculadora de Numeros (Operaciones Básicas)</p>
+
+            <form class="formulario" id="formulario">
+                <div class="grupo-formulario">
+                    <label for="numero1">Número 1</label>
+                    <input type="text" id="numero1" placeholder="Ej. 10">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="numero2">Número 2</label>
+                    <input type="text" id="numero2" placeholder="Ej. 5">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="resultado">Resultado</label>
+                    <input type="text" id="resultado" placeholder="Resultado" readonly>
+                </div>
+                
+                <div class="grupo-doble" style="gap: 10px; margin-bottom: 20px;">
+                    <button type="button" class="boton-enviar" onclick="calcularOperacion('suma')">Sumar</button>
+                    <button type="button" class="boton-enviar" onclick="calcularOperacion('resta')">Restar</button>
+                    <button type="button" class="boton-enviar" style="margin-top: 10px;" onclick="calcularOperacion('multiplicacion')">Multiplicar</button>
+                    <button type="button" class="boton-enviar" style="margin-top: 10px;" onclick="calcularOperacion('division')">Dividir</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor-formulario" style="margin-top: 20px;">
+             <a href="index.html" class="boton-enviar" style="text-decoration: none;">
+                Índice general <span> → </span>
+             </a>
+        </div>
+
+        <script src="js/ejercicio16.js"></script>
+    </body> 
+</html>
